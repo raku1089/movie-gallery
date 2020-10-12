@@ -1,14 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import NavBar from "./NavBar";
+import App from "./App";
+import * as serviceWorker from "./serviceWorker";
 
+const items = ["Home", "Favourite"];
 ReactDOM.render(
   <React.StrictMode>
+    <NavBar menu={items} />
     <App />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change

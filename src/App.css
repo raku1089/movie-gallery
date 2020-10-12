@@ -1,38 +1,101 @@
 .App {
+  font-family: sans-serif;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.card {
+  border: 1px solid lightgrey;
+  height: 260px;
+  width: 240px;
+}
+img {
+  width: 240px;
+  height: 180px;
+}
+input[type="text"] {
+  width: 60%;
+  height: 30px;
+  border-radius: 20px;
+  border: 1px solid lightblue;
+  outline: none;
+}
+.select-container {
+  border: 1px solid black;
+  width: 20%;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid lightblue;
+  outline: none;
+}
+select {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  font-size: 14px;
+}
+.search-container {
+  display: flex;
+  margin: auto;
+  padding: 10px 20px;
+  max-width: 460px;
+  flex-wrap: nowrap;
+  margin-top: 20px;
+  border: 1px solid lightblue;
+}
+.search {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #fff;
+  background-color: lightgreen;
+  width: 20%;
+  height: 35px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid lightblue;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+li {
+  font-size: 16px;
+  color: salmon;
+  cursor: pointer;
+}
+li:hover {
+  color: royalblue;
+}
+nav {
+  background-color: lightgray;
+  padding: 5px;
+}
+.card-info {
+  display: grid;
+  grid-template-columns: 40% 5% 60%;
+  text-align: start;
+}
+.about {
+  font-size: 14px;
+  color: rgb(76, 74, 226);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.about:hover {
+  overflow: visible;
+  word-break: break-all;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ion-icon {
+  color: red;
 }
